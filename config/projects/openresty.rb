@@ -5,8 +5,8 @@
 #
 
 name "openresty"
-maintainer "CHANGE ME"
-homepage "https://CHANGE-ME.com"
+maintainer "3scale Networks S.L."
+homepage "https://github.com/3scale/omnibus-openresty"
 
 # Defaults to C:/openresty on Windows
 # and /opt/openresty on all other platforms
@@ -19,7 +19,8 @@ build_iteration 1
 dependency "preparation"
 
 # openresty dependencies/components
-# dependency "somedep"
+dependency "openresty"
+dependency "openresty-luarocks"
 
 # Version manifest file
 dependency "version-manifest"
